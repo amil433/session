@@ -1,7 +1,7 @@
 const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys")
 
 async function start() {
-  const { state, saveCreds } = await useMultiFileAuthState("./session")
+  const { state, saveCreds } = await useMultiFileAuthState(".yud/session")
 
   const sock = makeWASocket({
     auth: state,
